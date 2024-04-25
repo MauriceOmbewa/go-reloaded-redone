@@ -12,6 +12,7 @@ import (
 func main() {
 	if len(os.Args) != 3 { // dealing with the error of having more or less than required arguments
 		fmt.Println("Error! Expected: go run main.go sample.txt result.txt")
+		return
 	}
 
 	inputfilename := os.Args[1]
